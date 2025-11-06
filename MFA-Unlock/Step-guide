@@ -1,0 +1,82 @@
+Purpose
+
+This guide explains what to do if you lose access to your Multi-Factor Authentication (MFA) device for the AWS Management Console.
+Following these steps helps protect your account while restoring secure access.
+
+⚠️ When to Use This Guide
+
+Use this procedure if:
+
+You lost your phone or Authenticator app
+
+Your device was wiped or replaced
+
+Your MFA token stopped working
+
+You deleted your AWS Authenticator entry by accident
+
+🪜 Recovery Steps
+Step 1 — Do Not Try Multiple Logins
+
+Avoid repeated login attempts — this may trigger a temporary lockout.
+Instead, proceed with the recovery process below.
+
+Step 2 — Notify IT or Account Administrator
+
+Contact your AWS administrator or IT support team as soon as possible.
+
+Provide:
+
+Your AWS username or email address
+
+Your account ID or account alias
+
+The reason you can’t complete MFA (e.g., lost device, new phone)
+
+Example message:
+
+“Hi team, I lost access to my MFA device and can’t log in to the AWS console.
+My username is jane.doe@company.com
+. Please reset my MFA.”
+
+Step 3 — Admin Verification (IT Action)
+
+The IT admin will:
+
+Verify your identity (by manager confirmation, email check, or ID verification).
+
+Log in to the AWS console as an admin.
+
+Go to
+IAM → Users → [YourUsername] → Security credentials → Manage MFA
+
+Click Remove MFA device to unlink your old authenticator.
+
+✅ Screenshot to take for documentation:
+“IAM → Security credentials → Remove MFA device” confirmation page.
+
+Step 4 — Re-Register MFA
+
+Once notified by IT that your old MFA device is removed:
+
+Log in to the AWS console with your username and password.
+
+You’ll be prompted to set up MFA again.
+
+Choose Virtual MFA device.
+
+Open your new Authenticator app (Google Authenticator, Authy, Microsoft Authenticator).
+
+Scan the QR code displayed on the AWS console.
+
+Enter the two consecutive 6-digit codes.
+
+Click Assign MFA.
+
+✅ You’ll see confirmation:
+
+“Virtual MFA device successfully assigned.”
+
+Step 5 — Test Login
+
+Sign out, then sign back in using your new MFA device to confirm everything works correctly.
