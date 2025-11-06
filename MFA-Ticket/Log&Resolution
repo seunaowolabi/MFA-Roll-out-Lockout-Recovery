@@ -1,0 +1,24 @@
+Ticket ID: ITSEC-003-AWS-MFA
+Date: 06-Nov-2025
+Reported by: testuser@ayotech.com
+
+Issue: Lost MFA device — unable to log in.
+Impact: Access to AWS console and resources blocked.
+
+Resolution Steps:
+
+Verified user identity through HR confirmation.
+
+Admin removed old MFA from IAM console.
+
+Re-assigned MFA to user’s new Authenticator app.
+
+Login verified with new MFA device.
+
+Preventive Measures:
+
+Encourage backup MFA methods (hardware key or SMS).
+
+Implement account recovery workflow.
+
+Store backup codes in secure location.
